@@ -1,0 +1,1034 @@
+GAME
+{
+	version = 0.20.2
+	Title = Toast (Sandbox)
+	Description = No description available.
+	Mode = 0
+	Status = 1
+	scene = 5
+	flag = Squad/Flags/09
+	PARAMETERS
+	{
+		FLIGHT
+		{
+			CanQuickSave = True
+			CanQuickLoad = True
+			CanAutoSave = True
+			CanUseMap = True
+			CanSwitchVesselsNear = True
+			CanSwitchVesselsFar = True
+			CanTimeWarpHigh = True
+			CanTimeWarpLow = True
+			CanEVA = True
+			CanIVA = True
+			CanBoard = True
+			CanRestart = True
+			CanLeaveToEditor = True
+			CanLeaveToTrackingStation = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		EDITOR
+		{
+			CanSave = True
+			CanLoad = True
+			CanStartNew = True
+			CanLaunch = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+			startUpMode = 0
+			craftFileToLoad = 
+		}
+		TRACKINGSTATION
+		{
+			CanFlyVessel = True
+			CanAbortVessel = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		SPACECENTER
+		{
+			CanGoInVAB = True
+			CanGoInSPH = True
+			CanGoInTrackingStation = True
+			CanLaunchAtPad = True
+			CanLaunchAtRunway = True
+			CanLeaveToMainMenu = True
+		}
+	}
+	FLIGHTSTATE
+	{
+		version = 0.20.2
+		UT = 17827.7858046941
+		activeVessel = 3
+		CREW
+		{
+			name = Jebediah Kerman
+			brave = 0.5
+			dumb = 0.5
+			badS = True
+			state = 3
+			ToD = 19445.5551613049
+			idx = 0
+		}
+		CREW
+		{
+			name = Bill Kerman
+			brave = 0.5
+			dumb = 0.8
+			badS = False
+			state = 3
+			ToD = 19464.3151613053
+			idx = 0
+		}
+		CREW
+		{
+			name = Bob Kerman
+			brave = 0.3
+			dumb = 0.1
+			badS = False
+			state = 3
+			ToD = 19836.6751613133
+			idx = 0
+		}
+		CREW
+		{
+			name = Sambin Kerman
+			brave = 0.14612
+			dumb = 0.421153
+			badS = False
+			state = 3
+			ToD = 19272.9058046819
+			idx = 0
+		}
+		CREW
+		{
+			name = Matsby Kerman
+			brave = 0.6380134
+			dumb = 0.1837155
+			badS = True
+			state = 0
+			ToD = 10894.4121386697
+			idx = 0
+		}
+		CREW
+		{
+			name = Nelming Kerman
+			brave = 0.5993971
+			dumb = 0.4479553
+			badS = False
+			state = 0
+			ToD = 10970.2721386697
+			idx = 0
+		}
+		CREW
+		{
+			name = Seevis Kerman
+			brave = 0.08556557
+			dumb = 0.1069529
+			badS = False
+			state = 0
+			ToD = 10988.8521386696
+			idx = 0
+		}
+		CREW
+		{
+			name = Dilfrod Kerman
+			brave = 0.0415355
+			dumb = 0.9151356
+			badS = False
+			state = 0
+			ToD = 11011.0321386696
+			idx = 0
+		}
+		CREW
+		{
+			name = Danemy Kerman
+			brave = 0.670487
+			dumb = 0.4125345
+			badS = False
+			state = 0
+			ToD = 11040.1121386696
+			idx = 0
+		}
+		CREW
+		{
+			name = Chadster Kerman
+			brave = 0.926497
+			dumb = 0.6927224
+			badS = True
+			state = 0
+			ToD = 11082.9721386696
+			idx = 0
+		}
+		CREW
+		{
+			name = Gusbas Kerman
+			brave = 0.3590844
+			dumb = 0.1639227
+			badS = False
+			state = 0
+			ToD = 11106.9921386695
+			idx = 0
+		}
+		CREW
+		{
+			name = Luwise Kerman
+			brave = 0.7623417
+			dumb = 0.8863848
+			badS = False
+			state = 0
+			ToD = 11212.6321386694
+			idx = 0
+		}
+		CREW
+		{
+			name = Bartory Kerman
+			brave = 0.01852787
+			dumb = 0.7748522
+			badS = False
+			state = 0
+			ToD = 11248.8321386694
+			idx = 0
+		}
+		CREW
+		{
+			name = Hudble Kerman
+			brave = 0.1192243
+			dumb = 0.6634716
+			badS = False
+			state = 0
+			ToD = 11641.6521386769
+			idx = 0
+		}
+		CREW
+		{
+			name = Edger Kerman
+			brave = 0.8758188
+			dumb = 0.6586376
+			badS = False
+			state = 0
+			ToD = 11751.3721386793
+			idx = 0
+		}
+		CREW
+		{
+			name = Keldin Kerman
+			brave = 0.1916672
+			dumb = 0.4452931
+			badS = False
+			state = 0
+			ToD = 12534.2521386964
+			idx = 0
+		}
+		CREW
+		{
+			name = Hudely Kerman
+			brave = 0.3392364
+			dumb = 0.3082944
+			badS = False
+			state = 0
+			ToD = 12743.632138701
+			idx = 0
+		}
+		CREW
+		{
+			name = Sigzer Kerman
+			brave = 0.2495757
+			dumb = 0.7415255
+			badS = False
+			state = 0
+			ToD = 12783.5321387018
+			idx = 0
+		}
+		CREW
+		{
+			name = Jedlock Kerman
+			brave = 0.3266768
+			dumb = 0.6786289
+			badS = False
+			state = 0
+			ToD = 12818.6921387026
+			idx = 0
+		}
+		CREW
+		{
+			name = Henmy Kerman
+			brave = 0.621846
+			dumb = 0.9874457
+			badS = False
+			state = 0
+			ToD = 12834.6921387029
+			idx = 0
+		}
+		CREW
+		{
+			name = Adby Kerman
+			brave = 0.1285346
+			dumb = 0.9206173
+			badS = False
+			state = 0
+			ToD = 13214.3521387112
+			idx = 0
+		}
+		CREW
+		{
+			name = Romore Kerman
+			brave = 0.4072556
+			dumb = 0.6861153
+			badS = False
+			state = 0
+			ToD = 13232.2121387116
+			idx = 0
+		}
+		CREW
+		{
+			name = Enming Kerman
+			brave = 0.9257737
+			dumb = 0.9644502
+			badS = False
+			state = 0
+			ToD = 13392.5521387151
+			idx = 0
+		}
+		CREW
+		{
+			name = Camfrod Kerman
+			brave = 0.6631086
+			dumb = 0.853792
+			badS = True
+			state = 0
+			ToD = 13286.0521387128
+			idx = 0
+		}
+		CREW
+		{
+			name = Alan Kerman
+			brave = 0.6788273
+			dumb = 0.580744
+			badS = False
+			state = 0
+			ToD = 13351.3521387142
+			idx = 0
+		}
+		CREW
+		{
+			name = Wilsey Kerman
+			brave = 0.8179903
+			dumb = 0.6722094
+			badS = False
+			state = 0
+			ToD = 13412.3721387156
+			idx = 0
+		}
+		CREW
+		{
+			name = Milgun Kerman
+			brave = 0.81376
+			dumb = 0.1863196
+			badS = False
+			state = 0
+			ToD = 13718.2521387222
+			idx = 0
+		}
+		CREW
+		{
+			name = Melory Kerman
+			brave = 0.4622174
+			dumb = 0.962431
+			badS = False
+			state = 0
+			ToD = 13738.7321387227
+			idx = 0
+		}
+		CREW
+		{
+			name = Sherfred Kerman
+			brave = 0.2641646
+			dumb = 0.05576849
+			badS = False
+			state = 0
+			ToD = 13766.8521387233
+			idx = 0
+		}
+		CREW
+		{
+			name = Lemke Kerman
+			brave = 0.7524289
+			dumb = 0.5971666
+			badS = False
+			state = 0
+			ToD = 13965.3521387276
+			idx = 0
+		}
+		CREW
+		{
+			name = Ribry Kerman
+			brave = 0.9958906
+			dumb = 0.525578
+			badS = False
+			state = 0
+			ToD = 14006.0521387285
+			idx = 0
+		}
+		CREW
+		{
+			name = Bobmund Kerman
+			brave = 0.5516176
+			dumb = 0.7811617
+			badS = False
+			state = 0
+			ToD = 14245.0721387337
+			idx = 0
+		}
+		CREW
+		{
+			name = Ferger Kerman
+			brave = 0.08258188
+			dumb = 0.8056545
+			badS = False
+			state = 0
+			ToD = 14588.1321387412
+			idx = 0
+		}
+		CREW
+		{
+			name = Samtop Kerman
+			brave = 0.9444396
+			dumb = 0.2927309
+			badS = False
+			state = 0
+			ToD = 14678.2921387432
+			idx = 0
+		}
+		CREW
+		{
+			name = Camzor Kerman
+			brave = 0.02124023
+			dumb = 0.5397074
+			badS = False
+			state = 0
+			ToD = 14708.5521387438
+			idx = 0
+		}
+		CREW
+		{
+			name = Lenbur Kerman
+			brave = 0.8615303
+			dumb = 0.3837845
+			badS = False
+			state = 0
+			ToD = 16250.4766651446
+			idx = 0
+		}
+		CREW
+		{
+			name = Endun Kerman
+			brave = 0.3869804
+			dumb = 0.9238112
+			badS = False
+			state = 0
+			ToD = 16930.4902979719
+			idx = 0
+		}
+		CREW
+		{
+			name = Melald Kerman
+			brave = 0.9904975
+			dumb = 0.7278762
+			badS = False
+			state = 0
+			ToD = 16981.6302979731
+			idx = 0
+		}
+		CREW
+		{
+			name = Millong Kerman
+			brave = 0.8071433
+			dumb = 0.5515465
+			badS = False
+			state = 0
+			ToD = 17084.6702979753
+			idx = 0
+		}
+		CREW
+		{
+			name = Joncan Kerman
+			brave = 0.6257114
+			dumb = 0.7321222
+			badS = False
+			state = 0
+			ToD = 11919.2102979761
+			idx = 0
+		}
+		CREW
+		{
+			name = Bobald Kerman
+			brave = 0.5597505
+			dumb = 0.440571
+			badS = True
+			state = 0
+			ToD = 11919.2102979761
+			idx = 1
+		}
+		CREW
+		{
+			name = Wehrlie Kerman
+			brave = 0.4379968
+			dumb = 0.2534791
+			badS = False
+			state = 0
+			ToD = 11919.2102979761
+			idx = 2
+		}
+		CREW
+		{
+			name = Billy-Bobbo Kerman
+			brave = 0.06406045
+			dumb = 0.2720138
+			badS = False
+			state = 0
+			ToD = 10124.8302979779
+			idx = 0
+		}
+		CREW
+		{
+			name = Joeely Kerman
+			brave = 0.3553935
+			dumb = 0.4435342
+			badS = False
+			state = 0
+			ToD = 10124.8302979779
+			idx = 1
+		}
+		CREW
+		{
+			name = Herrey Kerman
+			brave = 0.4971516
+			dumb = 0.8861486
+			badS = False
+			state = 0
+			ToD = 10124.8302979779
+			idx = 2
+		}
+		CREW
+		{
+			name = Rokin Kerman
+			brave = 0.6391842
+			dumb = 0.05730283
+			badS = False
+			state = 0
+			ToD = 12166.9102979814
+			idx = 0
+		}
+		CREW
+		{
+			name = Bilfurt Kerman
+			brave = 0.9967591
+			dumb = 0.6017702
+			badS = False
+			state = 0
+			ToD = 12166.9102979814
+			idx = 1
+		}
+		CREW
+		{
+			name = Johnfrid Kerman
+			brave = 0.393815
+			dumb = 0.6193512
+			badS = False
+			state = 0
+			ToD = 12166.9102979814
+			idx = 2
+		}
+		VESSEL
+		{
+			pid = e40983612bf54681956a7403094129aa
+			name = Toastlift Mk1 Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			landedAt = LaunchPad
+			splashed = False
+			met = 25.2800000005518
+			lct = 17469.1058046862
+			root = 0
+			lat = -0.102743199457832
+			lon = -74.5756038930318
+			alt = 88.564596377546
+			hgt = 20.10622
+			nrm = -6.025893E-07,1,2.289453E-07
+			rot = -0.5584413,0.2703691,-0.4347288,0.6527287
+			CoM = 0,0,0
+			stg = 3
+			prst = False
+			ref = 0
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 300823.047420336
+				ECC = 0.99482243711631
+				INC = 0.102743199456509
+				LPE = 90.0000000000002
+				LAN = 36.9974928517682
+				MNA = 3.14159265358979
+				EPH = 17494.3858046868
+				REF = 1
+				OBJ = 1
+			}
+			PART
+			{
+				name = launchClamp1
+				uid = 1348116716
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 3
+				dstg = 0
+				sqor = 3
+				sidx = 7
+				attm = 1
+				srfN = None, -1
+				mass = 0.1
+				temp = 19.01729
+				expt = 0.1
+				state = 1
+				connected = False
+				attached = False
+				flag = Squad/Flags/09
+				rTrf = launchClamp1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = LaunchClamp
+					isEnabled = True
+					scaleFactor = 8.234352
+					height = 20.7769
+					towerRot = 0,0.5000001,0,-0.8660254
+					EVENTS
+					{
+						Release
+						{
+							active = True
+							guiActive = True
+							guiIcon = Release Clamp
+							guiName = Release Clamp
+							category = Release Clamp
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ReleaseClamp
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 1
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Generator
+							guiName = Activate Generator
+							category = Activate Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Generator
+							guiName = Shutdown Generator
+							category = Shutdown Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 17467.0258046862
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+		}
+		VESSEL
+		{
+			pid = bd3477b6264d4d968f922bed307c7a34
+			name = Toastlift Mk1 Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			landedAt = LaunchPad
+			splashed = False
+			met = 25.2800000005518
+			lct = 17469.1058046862
+			root = 0
+			lat = -0.102446050820981
+			lon = -74.5754295597018
+			alt = 88.5650819689035
+			hgt = 20.10623
+			nrm = 1.147015E-07,1,-3.115148E-07
+			rot = -0.09726553,-0.7004643,0.7009887,-0.09221784
+			CoM = 0,0,0
+			stg = 3
+			prst = False
+			ref = 0
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 300823.047680113
+				ECC = 0.994822437007581
+				INC = 0.102446050831354
+				LPE = 89.9999999999998
+				LAN = 36.9976671850746
+				MNA = 3.14159265358979
+				EPH = 17494.3858046868
+				REF = 1
+				OBJ = 1
+			}
+			PART
+			{
+				name = launchClamp1
+				uid = 1160453212
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 3
+				dstg = 0
+				sqor = 3
+				sidx = 8
+				attm = 1
+				srfN = None, -1
+				mass = 0.1
+				temp = 19.01734
+				expt = 0.1
+				state = 1
+				connected = False
+				attached = False
+				flag = Squad/Flags/09
+				rTrf = launchClamp1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = LaunchClamp
+					isEnabled = True
+					scaleFactor = 8.234353
+					height = 20.7769
+					towerRot = 0,1,0,1.07231E-07
+					EVENTS
+					{
+						Release
+						{
+							active = True
+							guiActive = True
+							guiIcon = Release Clamp
+							guiName = Release Clamp
+							category = Release Clamp
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ReleaseClamp
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 1
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Generator
+							guiName = Activate Generator
+							category = Activate Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Generator
+							guiName = Shutdown Generator
+							category = Shutdown Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 17467.0258046862
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+		}
+		VESSEL
+		{
+			pid = 7a82b099162145a9882d6e0607b005b8
+			name = Toastlift Mk1 Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			landedAt = LaunchPad
+			splashed = False
+			met = 25.2800000005518
+			lct = 17469.1058046862
+			root = 0
+			lat = -0.102745602028119
+			lon = -74.5752593877112
+			alt = 88.566171002225
+			hgt = 20.10622
+			nrm = 4.40681E-07,1,2.495792E-07
+			rot = -0.6557068,-0.430095,0.26626,0.5605109
+			CoM = -5.140994E-08,1.008198E-10,-3.016159E-08
+			stg = 3
+			prst = False
+			ref = 0
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 300823.048215725
+				ECC = 0.994822437076331
+				INC = 0.102745602033741
+				LPE = 89.9999999999997
+				LAN = 36.9978373571073
+				MNA = 3.14159265358979
+				EPH = 17494.3858046868
+				REF = 1
+				OBJ = 1
+			}
+			PART
+			{
+				name = launchClamp1
+				uid = 3519586747
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 3
+				dstg = 0
+				sqor = 3
+				sidx = 9
+				attm = 1
+				srfN = None, -1
+				mass = 0.1
+				temp = 19.0165
+				expt = 0.1
+				state = 1
+				connected = False
+				attached = False
+				flag = Squad/Flags/09
+				rTrf = launchClamp1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = LaunchClamp
+					isEnabled = True
+					scaleFactor = 8.234357
+					height = 20.7769
+					towerRot = 0,0.4999999,0,0.8660255
+					EVENTS
+					{
+						Release
+						{
+							active = True
+							guiActive = True
+							guiIcon = Release Clamp
+							guiName = Release Clamp
+							category = Release Clamp
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ReleaseClamp
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 1
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Generator
+							guiName = Activate Generator
+							category = Activate Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Generator
+							guiName = Shutdown Generator
+							category = Shutdown Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 17467.0258046862
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+		}
+	}
+}

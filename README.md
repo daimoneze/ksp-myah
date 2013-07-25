@@ -7,8 +7,7 @@ This repository goes in the KSP save folder.
 
 If an error is shown after selecting "Resume", choose DO NOT delete. NEVER delete the .git folder.
 
-Instuctions
-===========
+# Instuctions
 
 If you are using the new GitHub app for Windows, right-click the repository with "local" selected on the left and choose "open shell here" to run all commands.
 

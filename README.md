@@ -13,7 +13,7 @@ If you are using the new GitHub app for Windows, right-click the repository with
 
 To clone:
 1. Go to [you-KSP-foler-root]/saves
-2. git clone https://github.com/daimoneze/ksp-myah.git . (the period at the end is important)
+2. git clone https://github.com/daimoneze/ksp-myah.git . (the period at the end is important).
 
 You now have the latest shared MYAH KSP Save.
 

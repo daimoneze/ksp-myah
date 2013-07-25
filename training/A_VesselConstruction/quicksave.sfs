@@ -1,0 +1,969 @@
+GAME
+{
+	version = 0.20.2
+	Title = Construction Basics
+	Description = This tutorial, presented by famous rocket scientist Wernher von Kerman himself, covers the basics of rocket construction in the Vehicle Assembly Building. He's waiting for you down there and is always in high demand. Don't dally!
+	Mode = 3
+	Status = 1
+	scene = 6
+	flag = Squad/Flags/default
+	PARAMETERS
+	{
+		FLIGHT
+		{
+			CanQuickSave = False
+			CanQuickLoad = False
+			CanAutoSave = False
+			CanUseMap = True
+			CanSwitchVesselsNear = False
+			CanSwitchVesselsFar = False
+			CanTimeWarpHigh = False
+			CanTimeWarpLow = False
+			CanEVA = False
+			CanIVA = True
+			CanBoard = False
+			CanRestart = True
+			CanLeaveToEditor = True
+			CanLeaveToTrackingStation = False
+			CanLeaveToSpaceCenter = False
+			CanLeaveToMainMenu = True
+		}
+		EDITOR
+		{
+			CanSave = True
+			CanLoad = True
+			CanStartNew = True
+			CanLaunch = True
+			CanLeaveToSpaceCenter = False
+			CanLeaveToMainMenu = True
+			startUpMode = 0
+			craftFileToLoad = 
+		}
+		TRACKINGSTATION
+		{
+			CanFlyVessel = True
+			CanAbortVessel = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		SPACECENTER
+		{
+			CanGoInVAB = True
+			CanGoInSPH = True
+			CanGoInTrackingStation = True
+			CanLaunchAtPad = True
+			CanLaunchAtRunway = True
+			CanLeaveToMainMenu = True
+		}
+	}
+	SCENARIO
+	{
+		name = TutorialEditor
+		scene = 6
+		statename = conclusion
+		complete = True
+	}
+	FLIGHTSTATE
+	{
+		version = 0.20.2
+		UT = 1.28
+		activeVessel = 0
+		CREW
+		{
+			name = Jebediah Kerman
+			brave = 0.5
+			dumb = 0.5
+			badS = True
+			state = 1
+			ToD = 0
+			idx = 0
+		}
+		CREW
+		{
+			name = Bill Kerman
+			brave = 0.5
+			dumb = 0.8
+			badS = False
+			state = 0
+			ToD = 0
+			idx = -1
+		}
+		CREW
+		{
+			name = Bob Kerman
+			brave = 0.3
+			dumb = 0.1
+			badS = False
+			state = 0
+			ToD = 0
+			idx = -1
+		}
+		VESSEL
+		{
+			pid = 064b85df98b44fcbb146589178f7603e
+			name = Untitled Space Craft
+			type = Ship
+			sit = PRELAUNCH
+			landed = True
+			landedAt = LaunchPad
+			splashed = False
+			met = 0
+			lct = 1.28
+			root = 0
+			lat = -0.10267298529855
+			lon = -74.5753893991465
+			alt = 75.1291374609573
+			hgt = 6.669864
+			nrm = -1.748734E-08,1,4.80418E-07
+			rot = -0.7009887,-0.09221787,-0.0972654,0.7004643
+			CoM = 1.287099E-07,-1.560425,3.21455E-08
+			stg = 3
+			prst = False
+			ref = 1072415646
+			cPch = 0
+			cHdg = 0
+			cMod = 1
+			ORBIT
+			{
+				SMA = 300815.471489623
+				ECC = 0.994822825237232
+				INC = 0.10267300027778
+				LPE = 90
+				LAN = 105.445943999219
+				MNA = 3.14159182714435
+				EPH = 1.28
+				REF = 1
+				OBJ = 0
+			}
+			PART
+			{
+				name = mk1pod
+				uid = 1072415646
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 1
+				attN = top, 12
+				mass = 0.8
+				temp = 16.78253
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = mk1pod
+				crew = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Operational
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 50
+					maxAmount = 50
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = fuelTank.long
+				uid = 4065959385
+				parent = 0
+				position = 0,-2.28004169464111,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 0
+				attN = bottom, 2
+				mass = 0.5
+				temp = 16.82306
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = fuelTank.long
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 360
+					maxAmount = 360
+					flowState = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 440
+					maxAmount = 440
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = liquidEngine
+				uid = 886857732
+				parent = 1
+				position = 0,-5.06936740875244,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				attN = top, 1
+				attN = None, -1
+				mass = 1.25
+				temp = 16.78794
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = liquidEngine
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEngines
+					isEnabled = True
+					EngineIgnited = False
+					engineShutdown = False
+					currentThrottle = 0
+					flameout = False
+					staged = False
+					EVENTS
+					{
+						Activate
+						{
+							active = True
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleJettison
+					isEnabled = True
+					EVENTS
+					{
+						Jettison
+						{
+							active = False
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						JettisonAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAlternator
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 0
+					maxAmount = 0.0199999995529652
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = radialDecoupler
+				uid = 2544880101
+				parent = 1
+				position = -5.21540641784668E-08,-2.88906145095825,-0.62910133600235
+				rotation = 0,0.7071068,0,-0.7071068
+				mirror = 1,1,1
+				istg = 1
+				dstg = 1
+				sqor = 1
+				sidx = 1
+				attm = 1
+				sym = 6
+				sym = 9
+				srfN = srfAttach, 1
+				mass = 0.025
+				temp = 16.78029
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = radialDecoupler
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnchoredDecoupler
+					isEnabled = True
+					isDecoupled = False
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solidBooster1-1
+				uid = 1062820153
+				parent = 3
+				position = 0.207698822021484,-2.81705045700073,-1.40424335002899
+				rotation = 1.907588E-10,0.9914449,-7.119214E-10,0.1305263
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = 2
+				sidx = 1
+				attm = 1
+				sym = 7
+				sym = 10
+				srfN = srfAttach, 3
+				attN = None, -1
+				attN = top, 5
+				mass = 1.5
+				temp = 16.77207
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = solidBooster1-1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEngines
+					isEnabled = True
+					EngineIgnited = False
+					engineShutdown = False
+					currentThrottle = 0.9876287
+					flameout = False
+					staged = False
+					EVENTS
+					{
+						Activate
+						{
+							active = True
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				RESOURCE
+				{
+					name = SolidFuel
+					amount = 850
+					maxAmount = 850
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = noseCone
+				uid = 2363432232
+				parent = 4
+				position = 0.207698911428452,1.12245082855225,-1.40424335002899
+				rotation = 1.377194E-16,-0.8660254,-5.187847E-17,0.5000002
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 0
+				sym = 8
+				sym = 11
+				srfN = None, -1
+				attN = bottom01, 4
+				mass = 0.03
+				temp = 16.75046
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = noseCone
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = radialDecoupler
+				uid = 2014528869
+				parent = 1
+				position = -0.544817686080933,-2.88906145095825,0.314550787210464
+				rotation = 0,-0.2588192,0,-0.9659259
+				mirror = 1,1,1
+				istg = 1
+				dstg = 1
+				sqor = 1
+				sidx = 2
+				attm = 1
+				sym = 3
+				sym = 9
+				srfN = srfAttach, 1
+				mass = 0.025
+				temp = 16.77536
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = radialDecoupler
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnchoredDecoupler
+					isEnabled = True
+					isDecoupled = False
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solidBooster1-1
+				uid = 230393378
+				parent = 6
+				position = -1.31995952129364,-2.81705045700073,0.522249341011047
+				rotation = -5.211627E-10,0.6087615,-5.211627E-10,-0.7933534
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = 2
+				sidx = 0
+				attm = 1
+				sym = 4
+				sym = 10
+				srfN = srfAttach, 6
+				attN = None, -1
+				attN = top, 8
+				mass = 1.5
+				temp = 16.7714
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = solidBooster1-1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEngines
+					isEnabled = True
+					EngineIgnited = False
+					engineShutdown = False
+					currentThrottle = 0.9876287
+					flameout = False
+					staged = False
+					EVENTS
+					{
+						Activate
+						{
+							active = True
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				RESOURCE
+				{
+					name = SolidFuel
+					amount = 850
+					maxAmount = 850
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = noseCone
+				uid = 4111579713
+				parent = 7
+				position = -1.31995952129364,1.12245082855225,0.522249341011047
+				rotation = 8.173799E-18,0,-6.01871E-17,1
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 0
+				sym = 5
+				sym = 11
+				srfN = None, -1
+				attN = bottom01, 7
+				mass = 0.03
+				temp = 16.75081
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = noseCone
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = radialDecoupler
+				uid = 2073646378
+				parent = 1
+				position = 0.544817805290222,-2.88906145095825,0.314550578594208
+				rotation = 0,-0.9659259,0,-0.2588189
+				mirror = 1,1,1
+				istg = 1
+				dstg = 1
+				sqor = 1
+				sidx = 3
+				attm = 1
+				sym = 3
+				sym = 6
+				srfN = srfAttach, 1
+				mass = 0.025
+				temp = 16.77051
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = radialDecoupler
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnchoredDecoupler
+					isEnabled = True
+					isDecoupled = False
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = solidBooster1-1
+				uid = 2108143188
+				parent = 9
+				position = 1.11226153373718,-2.81705045700073,0.881994068622589
+				rotation = -7.119211E-10,-0.3826834,1.907588E-10,-0.9238796
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = 2
+				sidx = 2
+				attm = 1
+				sym = 4
+				sym = 7
+				srfN = srfAttach, 9
+				attN = None, -1
+				attN = top, 11
+				mass = 1.5
+				temp = 16.77137
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = solidBooster1-1
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEngines
+					isEnabled = True
+					EngineIgnited = False
+					engineShutdown = False
+					currentThrottle = 0.9876287
+					flameout = False
+					staged = False
+					EVENTS
+					{
+						Activate
+						{
+							active = True
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				RESOURCE
+				{
+					name = SolidFuel
+					amount = 850
+					maxAmount = 850
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = noseCone
+				uid = 2426943390
+				parent = 10
+				position = 1.11226153373718,1.12245082855225,0.881994247436523
+				rotation = -4.340285E-17,0.8660254,-1.951039E-17,0.4999999
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 0
+				sym = 5
+				sym = 8
+				srfN = None, -1
+				attN = bottom01, 10
+				mass = 0.03
+				temp = 16.75045
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = noseCone
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = standardNoseCone
+				uid = 1513576428
+				parent = 0
+				position = 0,0.814870834350586,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom01, 0
+				mass = 0.1
+				temp = 16.74487
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = standardNoseCone
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+		}
+	}
+}

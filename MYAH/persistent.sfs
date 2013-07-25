@@ -72,8 +72,8 @@ GAME
 			}
 			AltitudeRecord
 			{
-				reached = 3917.99470947057
-				record = 315817.019217463
+				reached = 35561.0786598187
+				record = 12891394.502133
 			}
 			FirstCrewToSurvive
 			{
@@ -112,6 +112,10 @@ GAME
 						crews = 0
 					}
 				}
+				Escape
+				{
+					completed = 45972.54736038
+				}
 				Landing
 				{
 					completed = 1311.55881591765
@@ -147,12 +151,33 @@ GAME
 					}
 				}
 			}
+			Mun
+			{
+				reached = 45972.54736038
+				Flyby
+				{
+					completed = 45972.54736038
+				}
+				Orbit
+				{
+					completed = 50872.8695417703
+					vessel
+					{
+						name = SS-MK-1
+						flag = Squad/Flags/trees
+					}
+					crew
+					{
+						crews = 1
+					}
+				}
+			}
 		}
 	}
 	FLIGHTSTATE
 	{
 		version = 0.21.0
-		UT = 3250.16434692198
+		UT = 50921.2095417626
 		activeVessel = 0
 		VESSEL
 		{
@@ -163,16 +188,16 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 2349.4266113266
+			met = 49415.9814436192
 			lct = 1501.20809814402
 			root = 0
-			lat = 0.474988225075156
-			lon = -72.5447821812864
-			alt = 245504.664737148
+			lat = -3.4953568478501
+			lon = 25.4312007112868
+			alt = 554255.732152488
 			hgt = -1
-			nrm = 0.8950729,-0.4236778,0.1390741
-			rot = -0.5933017,-0.2939173,-0.3737056,0.6495767
-			CoM = -0.0001278473,-1.244901,-0.00102525
+			nrm = 0.997959,0.02679005,0.057967
+			rot = -0.6736397,-0.13501,-0.2167271,0.6935497
+			CoM = 0.0003446128,-1.271003,-0.001215822
 			stg = 2
 			prst = False
 			ref = 3939774806
@@ -181,14 +206,14 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 7115306.39753543
-				ECC = 0.89547743382206
-				INC = 0.525076397225807
-				LPE = 22.942839458171
-				LAN = 16.8631165857399
-				MNA = 0.0195632284704866
-				EPH = 3850.63470947062
-				REF = 1
+				SMA = 521939.517619969
+				ECC = 0.448061825185261
+				INC = 4.72740220193149
+				LPE = 136.359870147281
+				LAN = 74.9320854370469
+				MNA = 2.97516348807484
+				EPH = 50917.2295417632
+				REF = 2
 				OBJ = 0
 			}
 			PART
@@ -209,7 +234,7 @@ GAME
 				attN = bottom, 2
 				attN = top, 1
 				mass = 0.8
-				temp = -40.0568
+				temp = -7.885327
 				expt = 0.5
 				state = 0
 				connected = True
@@ -323,10 +348,12 @@ GAME
 					}
 					FlewBy
 					{
+						at = Mun
 					}
 					Orbited
 					{
 						at = Kerbin
+						at = Mun
 					}
 					SubOrbited
 					{
@@ -336,7 +363,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 13.2208275359834
+					amount = 12.2917237202628
 					maxAmount = 50
 					flowState = True
 					flowMode = Both
@@ -359,7 +386,7 @@ GAME
 				srfN = None, -1
 				attN = bottom, 0
 				mass = 0.1
-				temp = -39.88261
+				temp = -9.837478
 				expt = 0.5
 				state = 0
 				connected = True
@@ -445,7 +472,7 @@ GAME
 				attN = bottom, 3
 				attN = top, 0
 				mass = 0.05
-				temp = -40.01093
+				temp = -4.381615
 				expt = 0.5
 				state = 0
 				connected = True
@@ -504,7 +531,7 @@ GAME
 				attN = top, 2
 				attN = bottom, 4
 				mass = 0.25
-				temp = -40.09541
+				temp = 1.923612
 				expt = 0.5
 				state = 1
 				connected = True
@@ -520,7 +547,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 117.825080871582
+					amount = 91.982222158526
 					maxAmount = 180
 					flowState = True
 					flowMode = Both
@@ -528,7 +555,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 144.008422851563
+					amount = 112.422705125379
 					maxAmount = 220
 					flowState = True
 					flowMode = Both
@@ -552,7 +579,7 @@ GAME
 				attN = top, 3
 				attN = None, -1
 				mass = 0.5
-				temp = -39.90445
+				temp = 7.705658
 				expt = 0.5
 				state = 1
 				connected = True
@@ -710,7 +737,7 @@ GAME
 				sym = 8
 				srfN = srfAttach, 3
 				mass = 0.05
-				temp = -39.8608
+				temp = 1.778178
 				expt = 0.5
 				state = 1
 				connected = True
@@ -770,7 +797,7 @@ GAME
 				sym = 8
 				srfN = srfAttach, 3
 				mass = 0.05
-				temp = -39.81592
+				temp = 1.739723
 				expt = 0.5
 				state = 1
 				connected = True
@@ -830,7 +857,7 @@ GAME
 				sym = 8
 				srfN = srfAttach, 3
 				mass = 0.05
-				temp = -39.77112
+				temp = 1.701362
 				expt = 0.5
 				state = 1
 				connected = True
@@ -890,7 +917,7 @@ GAME
 				sym = 7
 				srfN = srfAttach, 3
 				mass = 0.05
-				temp = -39.72646
+				temp = 1.66309
 				expt = 0.5
 				state = 1
 				connected = True
@@ -947,7 +974,7 @@ GAME
 				attm = 1
 				srfN = srfAttach, 2
 				mass = 0.005
-				temp = -39.8173
+				temp = -6.088462
 				expt = 0.5
 				state = 1
 				connected = True
@@ -1037,21 +1064,21 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 273.979999999755
+			met = 38.1597151183837
 			lct = 3642.43470947081
 			root = 0
-			lat = 1.34393779962653
-			lon = -69.1470296624127
-			alt = 170061.706723293
+			lat = 0.257319348719601
+			lon = -105.640812538824
+			alt = 145580.537861337
 			hgt = -1
 			nrm = -0.7599593,0.620158,0.1945926
-			rot = -0.272851,0.5809383,0.7129995,0.2823022
-			CoM = 1.016038E-05,-5.884121,-1.043416E-05
+			rot = -0.272851,0.5809383,0.7129996,0.2823022
+			CoM = -5.409921E-05,-5.884345,-4.112508E-05
 			stg = 4
 			prst = False
 			ref = 0
-			cPch = 
-			cHdg = 
+			cPch = 0
+			cHdg = 0
 			cMod = 0
 			ORBIT
 			{
@@ -1083,9 +1110,9 @@ GAME
 				attN = bottom, 1
 				attN = None, -1
 				mass = 0.05
-				temp = -198.8759
+				temp = -40.19011
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = False
 				attached = False
 				flag = Squad/Flags/trees
@@ -1142,9 +1169,9 @@ GAME
 				attN = top, 0
 				attN = bottom, 2
 				mass = 0.5
-				temp = -198.6112
+				temp = -40.19011
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = False
 				attached = True
 				flag = Squad/Flags/trees
@@ -1159,7 +1186,7 @@ GAME
 				{
 					name = ModuleReactionWheel
 					isEnabled = True
-					stateString = Not enough ElectricCharge
+					stateString = Operational
 					WheelState = Active
 					EVENTS
 					{
@@ -1221,9 +1248,9 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 0.5
-				temp = -198.4937
+				temp = -40.19011
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = False
 				attached = True
 				flag = Squad/Flags/trees
@@ -1269,9 +1296,9 @@ GAME
 				attN = top, 2
 				attN = bottom, 4
 				mass = 0.5
-				temp = -199.018
+				temp = -40.19011
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = False
 				attached = True
 				flag = Squad/Flags/trees
@@ -1317,9 +1344,9 @@ GAME
 				attN = top, 3
 				attN = None, -1
 				mass = 1.5
-				temp = -198.4014
+				temp = -40.19011
 				expt = 0.5
-				state = 1
+				state = 0
 				connected = False
 				attached = True
 				flag = Squad/Flags/trees
@@ -1492,9 +1519,9 @@ GAME
 				sym = 6
 				srfN = srfAttach, 3
 				mass = 0.02
-				temp = -198.2327
+				temp = -40.19011
 				expt = 0.1
-				state = 1
+				state = 0
 				connected = False
 				attached = True
 				flag = Squad/Flags/trees
@@ -1523,9 +1550,9 @@ GAME
 				sym = 5
 				srfN = srfAttach, 3
 				mass = 0.02
-				temp = -198.0336
+				temp = -40.19011
 				expt = 0.1
-				state = 1
+				state = 0
 				connected = False
 				attached = True
 				flag = Squad/Flags/trees

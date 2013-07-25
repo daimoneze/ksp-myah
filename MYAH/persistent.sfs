@@ -1,12 +1,12 @@
 GAME
 {
 	version = 0.21.0
-	Title = MYAH (Sandbox)
+	Title = TheGeneral (Sandbox)
 	Description = No description available.
 	Mode = 0
 	Status = 1
 	scene = 5
-	flag = Squad/Flags/trees
+	flag = Squad/Flags/default
 	PARAMETERS
 	{
 		FLIGHT
@@ -66,13 +66,610 @@ GAME
 		scene = 5, 7, 8
 		Progress
 		{
+			FirstLaunch
+			{
+				completed = 75.0600000000021
+			}
+			AltitudeRecord
+			{
+				reached = 1524.26434692354
+				record = 156363.530093263
+			}
+			ReachedSpace
+			{
+				completed = 318.68
+				vessel
+				{
+					name = Test
+					flag = Squad/Flags/default
+				}
+				crew
+				{
+					crews = 0
+				}
+			}
+			Kerbin
+			{
+				reached = 429.299999999899
+				Orbit
+				{
+					completed = 429.299999999899
+					vessel
+					{
+						name = Test
+						flag = Squad/Flags/default
+					}
+					crew
+					{
+						crews = 0
+					}
+				}
+			}
 		}
 	}
 	FLIGHTSTATE
 	{
 		version = 0.21.0
-		UT = 15.2799999999998
+		UT = 3153.00434692206
 		activeVessel = 0
+		VESSEL
+		{
+			pid = 2b511b2852444552b3e0f0f428c874ea
+			name = Test
+			type = Ship
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 1895.18434692313
+			lct = 75.0600000000021
+			root = 0
+			lat = 20.6140102696433
+			lon = -166.121180582973
+			alt = 152383.384587183
+			hgt = -1
+			nrm = -0.1931548,0.9413261,-0.2767603
+			rot = -0.2255694,0.004578191,-0.5479066,0.8055408
+			CoM = -1.422185E-05,-1.110074,1.773484E-05
+			stg = 2
+			prst = False
+			ref = 1511782313
+			cPch = 
+			cHdg = 
+			cMod = 0
+			ORBIT
+			{
+				SMA = 752161.982205192
+				ECC = 0.00573231682817187
+				INC = 22.9185272395161
+				LPE = 208.557108761076
+				LAN = 199.549208012073
+				MNA = 4.66698385281081
+				EPH = 1970.24434692313
+				REF = 1
+				OBJ = 0
+			}
+			PART
+			{
+				name = mk1pod
+				uid = 1511782313
+				mid = 2294223185
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 2
+				attN = top, 1
+				mass = 0.8
+				temp = -40.39476
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = mk1pod
+				crew = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Operational
+					EVENTS
+					{
+						MakeReference
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control From Here
+							guiName = Control From Here
+							category = Control From Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						RenameVessel
+						{
+							active = True
+							guiActive = True
+							guiIcon = Rename Vessel
+							guiName = Rename Vessel
+							category = Rename Vessel
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					stateString = Operational
+					WheelState = Active
+					EVENTS
+					{
+						OnToggle
+						{
+							active = True
+							guiActive = True
+							guiIcon = Toggle Torque
+							guiName = Toggle Torque
+							category = Toggle Torque
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = False
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Surfaced
+					{
+					}
+					Flew
+					{
+						at = Kerbin
+					}
+					FlewBy
+					{
+					}
+					Orbited
+					{
+						at = Kerbin
+					}
+					SubOrbited
+					{
+						at = Kerbin
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 48.0786144902703
+					maxAmount = 50
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = parachuteSingle
+				uid = 851807981
+				mid = 2294223185
+				parent = 0
+				position = 0,0.657449722290039,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 0
+				mass = 0.1
+				temp = -40.24405
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = parachuteSingle
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleParachute
+					isEnabled = True
+					persistentState = STOWED
+					staged = False
+					EVENTS
+					{
+						Deploy
+						{
+							active = True
+							guiActive = True
+							guiIcon = Deploy Chute
+							guiName = Deploy Chute
+							category = Deploy Chute
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						CutParachute
+						{
+							active = False
+							guiActive = True
+							guiIcon = Cut Parachute
+							guiName = Cut Parachute
+							category = Cut Parachute
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Repack
+						{
+							active = False
+							guiActive = False
+							guiIcon = Repack Chute
+							guiName = Repack Chute
+							category = Repack Chute
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						CutAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = stackDecoupler
+				uid = 895991939
+				mid = 2294223185
+				parent = 0
+				position = 0,-0.470089912414551,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 1
+				dstg = 1
+				sqor = 1
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 3
+				attN = top, 0
+				mass = 0.05
+				temp = -40.27193
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = stackDecoupler
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					isDecoupled = False
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = fuelTank
+				uid = 798951611
+				mid = 2294223185
+				parent = 2
+				position = 0,-1.56877040863037,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 2
+				attN = bottom, 4
+				mass = 0.25
+				temp = -40.24089
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = fuelTank
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 31.6315280112537
+					maxAmount = 180
+					flowState = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 38.6607477239252
+					maxAmount = 220
+					flowState = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = liquidEngine3
+				uid = 1474105619
+				mid = 2294223185
+				parent = 3
+				position = 0,-2.7519006729126,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = 2
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				attN = top, 3
+				attN = None, -1
+				mass = 0.5
+				temp = -40.17029
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/default
+				rTrf = liquidEngine3
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEngines
+					isEnabled = True
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 0
+					flameout = False
+					staged = True
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = True
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					EVENTS
+					{
+						LockGimbal
+						{
+							active = True
+							guiActive = True
+							guiIcon = Lock Gimbal
+							guiName = Lock Gimbal
+							category = Lock Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						FreeGimbal
+						{
+							active = False
+							guiActive = True
+							guiIcon = Free Gimbal
+							guiName = Free Gimbal
+							category = Free Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleJettison
+					isEnabled = True
+					EVENTS
+					{
+						Jettison
+						{
+							active = False
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						JettisonAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 188.000000000022
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 238.880000000048
+				SAS = True, 1397.12947387676
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+		}
 	}
 	ROSTER
 	{
@@ -82,9 +679,9 @@ GAME
 			brave = 0.5
 			dumb = 0.5
 			badS = True
-			state = 0
+			state = 1
 			ToD = 0
-			idx = -1
+			idx = 0
 		}
 		CREW
 		{
@@ -108,6 +705,96 @@ GAME
 		}
 		APPLICANTS
 		{
+			RECRUIT
+			{
+				name = Kirmy Kerman
+				brave = 0.8198122
+				dumb = 0.3232909
+				badS = False
+				state = 0
+				ToD = 110557.074512939
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Hadtrey Kerman
+				brave = 0.8401326
+				dumb = 0.5764824
+				badS = True
+				state = 0
+				ToD = 104397.205128174
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Wehrlas Kerman
+				brave = 0.5755923
+				dumb = 0.6678395
+				badS = False
+				state = 0
+				ToD = 106937.642445068
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Samzer Kerman
+				brave = 0.4824532
+				dumb = 0.4206588
+				badS = True
+				state = 0
+				ToD = 131875.161900024
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Billy-Bobbald Kerman
+				brave = 0.134028
+				dumb = 0.5125638
+				badS = False
+				state = 0
+				ToD = 243563.179554443
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Jorrim Kerman
+				brave = 0.3553787
+				dumb = 0.8766719
+				badS = False
+				state = 0
+				ToD = 107178.490223389
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Hading Kerman
+				brave = 0.6432332
+				dumb = 0.7268572
+				badS = False
+				state = 0
+				ToD = 254643.104328613
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Ludberry Kerman
+				brave = 0.1432027
+				dumb = 0.7666717
+				badS = False
+				state = 0
+				ToD = 149136.441196899
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Jedler Kerman
+				brave = 0.5992162
+				dumb = 0.9986817
+				badS = False
+				state = 0
+				ToD = 195113.946308594
+				idx = -1
+			}
 		}
 	}
 }

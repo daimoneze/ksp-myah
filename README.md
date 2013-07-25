@@ -12,6 +12,7 @@ If an error is shown after selecting "Resume", choose DO NOT delete. NEVER delet
 If you are using the new GitHub app for Windows, right-click the repository with "local" selected on the left and choose "open shell here" to run all commands.
 
 To clone:
+
 1. Go to [you-KSP-foler-root]/saves
 2. git clone https://github.com/daimoneze/ksp-myah.git . (the period at the end is important).
 

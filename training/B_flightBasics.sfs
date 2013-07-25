@@ -1,6 +1,6 @@
 GAME
 {
-	version = 0.18.2
+	version = 0.21.0
 	Title = Flight Basics
 	Description = Learn the basics of flying a spacecraft in KSP. In this tutorial, flight instructor Gene Kerman will take you through the essential flight controls and instruments required to launch a simple rocket to an almost respectable altitude.
 	Mode = 3
@@ -53,6 +53,10 @@ GAME
 			CanLaunchAtPad = True
 			CanLaunchAtRunway = True
 			CanLeaveToMainMenu = True
+		}		
+		DIFFICULTY
+		{
+			MissingCrewsRespawn = True
 		}
 	}
 	SCENARIO
@@ -62,39 +66,9 @@ GAME
 	}
 	FLIGHTSTATE
 	{
-		version = 0.18.2
+		version = 0.21.0
 		UT = 14.2599999999998
-		activeVessel = 0
-		CREW
-		{
-			name = Jebediah Kerman
-			brave = 0.5
-			dumb = 0.5
-			badS = True
-			state = 1
-			ToD = 0
-			idx = 0
-		}
-		CREW
-		{
-			name = Bill Kerman
-			brave = 0.5
-			dumb = 0.8
-			badS = False
-			state = 1
-			ToD = 0
-			idx = 1
-		}
-		CREW
-		{
-			name = Bob Kerman
-			brave = 0.3
-			dumb = 0.1
-			badS = False
-			state = 1
-			ToD = 0
-			idx = 2
-		}
+		activeVessel = 0		
 		VESSEL
 		{
 			pid = 0b67fb82de1249828afb2b8d87c1ee89
@@ -1301,6 +1275,42 @@ GAME
 				Custom09 = False, 0
 				Custom10 = False, 0
 			}
+		}
+	}
+	ROSTER
+	{
+		CREW
+		{
+			name = Jebediah Kerman
+			brave = 0.5
+			dumb = 0.5
+			badS = True
+			state = 1
+			ToD = 0
+			idx = 0
+		}
+		CREW
+		{
+			name = Bill Kerman
+			brave = 0.5
+			dumb = 0.8
+			badS = False
+			state = 1
+			ToD = 0
+			idx = 1
+		}
+		CREW
+		{
+			name = Bob Kerman
+			brave = 0.3
+			dumb = 0.1
+			badS = False
+			state = 1
+			ToD = 0
+			idx = 2
+		}
+		APPLICANTS
+		{
 		}
 	}
 }

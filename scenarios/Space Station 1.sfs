@@ -1,6 +1,6 @@
 GAME
 {
-	version = 0.18.2
+	version = 0.21.0
 	Title = Station One
 	Description = Space Station 1 is a small refueling outpost at low Kerbin orbit, where ships can stop to fill up before leaving on interplanetary missions.
 	Mode = 0
@@ -55,112 +55,16 @@ GAME
 			CanLaunchAtRunway = True
 			CanLeaveToMainMenu = True
 		}
+		DIFFICULTY
+		{
+			MissingCrewsRespawn = True
+		}
 	}
 	FLIGHTSTATE
 	{
 		version = 0.18.2
 		UT = 13109132.2782335
 		activeVessel = 0
-		CREW
-		{
-			name = Jebediah Kerman
-			brave = 0.5
-			dumb = 0.5
-			badS = True
-			state = 1
-			ToD = 7663.07999999987
-			idx = 0
-		}
-		CREW
-		{
-			name = Bill Kerman
-			brave = 0.5
-			dumb = 0.8
-			badS = False
-			state = 1
-			ToD = 13100736.3688264
-			idx = 1
-		}
-		CREW
-		{
-			name = Bob Kerman
-			brave = 0.3
-			dumb = 0.1
-			badS = False
-			state = 0
-			ToD = 7838.27999999971
-			idx = 1
-		}
-		CREW
-		{
-			name = Gregsy Kerman
-			brave = 0.4655374
-			dumb = 0.7172016
-			badS = False
-			state = 0
-			ToD = 7844.5799999997
-			idx = 2
-		}
-		CREW
-		{
-			name = Dillorf Kerman
-			brave = 0.496259
-			dumb = 0.7931044
-			badS = False
-			state = 0
-			ToD = 7844.5799999997
-			idx = 2
-		}
-		CREW
-		{
-			name = Sigbro Kerman
-			brave = 0.8747516
-			dumb = 0.08739066
-			badS = False
-			state = 1
-			ToD = 0
-			idx = 0
-		}
-		CREW
-		{
-			name = Richsby Kerman
-			brave = 0.2267164
-			dumb = 0.4012354
-			badS = False
-			state = 1
-			ToD = 0
-			idx = 1
-		}
-		CREW
-		{
-			name = Jerney Kerman
-			brave = 0.4465209
-			dumb = 0.1828512
-			badS = False
-			state = 1
-			ToD = 0
-			idx = 0
-		}
-		CREW
-		{
-			name = Bartbus Kerman
-			brave = 0.04384458
-			dumb = 0.9250365
-			badS = False
-			state = 1
-			ToD = 0
-			idx = 1
-		}
-		CREW
-		{
-			name = Ribly Kerman
-			brave = 0.405145
-			dumb = 0.5784057
-			badS = True
-			state = 1
-			ToD = 0
-			idx = 2
-		}
 		VESSEL
 		{
 			pid = e42f55c2f0b54b08aefdc3ec749a85af
@@ -14362,6 +14266,112 @@ GAME
 				Custom09 = False, 0
 				Custom10 = False, 0
 			}
+		}
+	}
+	ROSTER
+	{
+		CREW
+		{
+			name = Jebediah Kerman
+			brave = 0.5
+			dumb = 0.5
+			badS = True
+			state = 1
+			ToD = 7663.07999999987
+			idx = 0
+		}
+		CREW
+		{
+			name = Bill Kerman
+			brave = 0.5
+			dumb = 0.8
+			badS = False
+			state = 1
+			ToD = 13100736.3688264
+			idx = 1
+		}
+		CREW
+		{
+			name = Bob Kerman
+			brave = 0.3
+			dumb = 0.1
+			badS = False
+			state = 0
+			ToD = 7838.27999999971
+			idx = 1
+		}
+		CREW
+		{
+			name = Gregsy Kerman
+			brave = 0.4655374
+			dumb = 0.7172016
+			badS = False
+			state = 0
+			ToD = 7844.5799999997
+			idx = 2
+		}
+		CREW
+		{
+			name = Dillorf Kerman
+			brave = 0.496259
+			dumb = 0.7931044
+			badS = False
+			state = 0
+			ToD = 7844.5799999997
+			idx = 2
+		}
+		CREW
+		{
+			name = Sigbro Kerman
+			brave = 0.8747516
+			dumb = 0.08739066
+			badS = False
+			state = 1
+			ToD = 0
+			idx = 0
+		}
+		CREW
+		{
+			name = Richsby Kerman
+			brave = 0.2267164
+			dumb = 0.4012354
+			badS = False
+			state = 1
+			ToD = 0
+			idx = 1
+		}
+		CREW
+		{
+			name = Jerney Kerman
+			brave = 0.4465209
+			dumb = 0.1828512
+			badS = False
+			state = 1
+			ToD = 0
+			idx = 0
+		}
+		CREW
+		{
+			name = Bartbus Kerman
+			brave = 0.04384458
+			dumb = 0.9250365
+			badS = False
+			state = 1
+			ToD = 0
+			idx = 1
+		}
+		CREW
+		{
+			name = Ribly Kerman
+			brave = 0.405145
+			dumb = 0.5784057
+			badS = True
+			state = 1
+			ToD = 0
+			idx = 2
+		}
+		APPLICANTS
+		{
 		}
 	}
 }

@@ -1,7 +1,7 @@
 GAME
 {
 	version = 0.21.0
-	Title = MYAH (Sandbox)
+	Title = MYAH-21 (Sandbox)
 	Description = No description available.
 	Mode = 0
 	Status = 1
@@ -71,7 +71,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 0.21.0
-		UT = 15.2799999999998
+		UT = 67.7200000000037
 		activeVessel = 0
 	}
 	ROSTER
@@ -108,6 +108,96 @@ GAME
 		}
 		APPLICANTS
 		{
+			RECRUIT
+			{
+				name = Chad Kerman
+				brave = 0.9529066
+				dumb = 0.385472
+				badS = False
+				state = 0
+				ToD = 170740.296524048
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Seanlong Kerman
+				brave = 0.2767454
+				dumb = 0.6772158
+				badS = False
+				state = 0
+				ToD = 169045.545547485
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Dando Kerman
+				brave = 0.7365409
+				dumb = 0.1103137
+				badS = False
+				state = 0
+				ToD = 244915.654724121
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Ribry Kerman
+				brave = 0.4119501
+				dumb = 0.7322028
+				badS = False
+				state = 0
+				ToD = 183866.098754883
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Fersy Kerman
+				brave = 0.01858687
+				dumb = 0.6980137
+				badS = False
+				state = 0
+				ToD = 238550.430267334
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Gregler Kerman
+				brave = 0.0064044
+				dumb = 0.7404031
+				badS = False
+				state = 0
+				ToD = 142257.142227173
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Calfel Kerman
+				brave = 0.1496123
+				dumb = 0.3857077
+				badS = False
+				state = 0
+				ToD = 168828.325241089
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Dunfel Kerman
+				brave = 0.9631767
+				dumb = 0.07246363
+				badS = False
+				state = 0
+				ToD = 86996.8215637207
+				idx = -1
+			}
+			RECRUIT
+			{
+				name = Dilmy Kerman
+				brave = 0.8997184
+				dumb = 0.9701467
+				badS = False
+				state = 0
+				ToD = 227909.889953613
+				idx = -1
+			}
 		}
 	}
 }
